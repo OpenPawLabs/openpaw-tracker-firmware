@@ -1,0 +1,33 @@
+{
+	"type": "BOARD_NODEMCU",
+	"branding": {
+		"VENDOR_NAME": "OpenPaw Labs",
+		"VENDOR_URL": "https://openpawlabs.com",
+		"PRODUCT_NAME": "OpenPaw Tracker (BB-LSM6DSV)",
+		"UPDATE_ADDRESS": "OpenPawLabs/openpaw-tracker-firmware",
+		"UPDATE_NAME": "BOARD_SLIMEVR_OPENPAW_BLUEBERRY-firmware"
+	},
+	"values": {
+		"SENSORS": [
+			{
+				"protocol": "I2C",
+				"imu": "IMU_LSM6DSV",
+				"int": "D5",
+				"rotation": "DEG_0",
+				"scl": "D1",
+				"sda": "D2"
+			}
+		],
+		"BATTERY": {
+			"type": "BAT_EXTERNAL",
+			"r1": 100,
+			"r2": 220,
+			"shieldR": 180,
+			"pin": "A0"
+		},
+		"LED": {
+			"LED_PIN": "2",
+			"LED_INVERTED": true
+		}
+	}
+}
